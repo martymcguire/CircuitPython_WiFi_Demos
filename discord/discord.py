@@ -16,8 +16,10 @@ except ImportError:
     raise
 
 # Set up where we'll be fetching data from
-DATA_SOURCE = "https://img.shields.io/discord/327254708534116352.svg"
-DATA_LOCATION = ["svg"]
+# A very simple glitch.com proxy to massage the Discord widget data!
+# Source is at: https://glitch.com/~gamy-scissor
+DATA_SOURCE = "https://gamy-scissor.glitch.me/327254708534116352/online.json"
+DATA_LOCATION = ["members","total"]
 
 cwd = __file__.rsplit('/', 1)[0]
 pyportal = adafruit_pyportal.PyPortal(url=DATA_SOURCE, json_path=DATA_LOCATION,
