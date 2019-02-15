@@ -17,8 +17,8 @@ except ImportError:
 
 # Set up where we'll be fetching data from
 # A very simple glitch.com proxy to massage the Discord widget data!
-# Source is at: https://glitch.com/~gamy-scissor
-DATA_SOURCE = "https://gamy-scissor.glitch.me/327254708534116352/online.json"
+# Source is at: https://glitch.com/~discord-widget-aggregated
+DATA_SOURCE = "https://discord-widget-aggregated.glitch.me/327254708534116352/online.json"
 DATA_LOCATION = ["members","total"]
 
 cwd = __file__.rsplit('/', 1)[0]
